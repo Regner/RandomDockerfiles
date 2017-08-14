@@ -1,4 +1,4 @@
-FROM ubuntu:zesty
+FROM multiarch/crossbuild:latest
 
 # gcc for cgo
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -7,8 +7,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		libc6-dev \
 		make \
 		pkg-config \
-		wget \
 		ca-certificates \
+		wget \  
+		git \      
 	&& rm -rf /var/lib/apt/lists/*
 
 ENV GOLANG_VERSION 1.8.3
