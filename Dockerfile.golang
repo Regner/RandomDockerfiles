@@ -1,5 +1,5 @@
 # Copy from: https://github.com/docker-library/golang/blob/97b2ff201ec59b9a037197d132c64eb937370c64/1.8/stretch/Dockerfile
-# Only FROM below (baseimage) changed.
+# Only FROM below (baseimage) changed
 FROM ubuntu:zesty
 
 # gcc for cgo
