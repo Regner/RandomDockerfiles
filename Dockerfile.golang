@@ -8,8 +8,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		make \
 		pkg-config \
 		ca-certificates \
-		wget \  
-		git \      
+		wget \
+		git \
+		ssh \
 	&& rm -rf /var/lib/apt/lists/*
 
 ENV GOLANG_VERSION 1.8.3
